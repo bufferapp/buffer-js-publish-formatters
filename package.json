@@ -1,7 +1,7 @@
 {
   "name": "@bufferapp/publish-formatters",
-  "version": "1.9.26",
-  "description": "Tools·for·formatting·dates,·numbers,·etc.",
+  "version": "1.9.27",
+  "description": "Tools for formatting·dates, numbers, etc.",
   "main": "lib/index.js",
   "scripts": {
     "lint": "eslint --ext .js test/ src/",
