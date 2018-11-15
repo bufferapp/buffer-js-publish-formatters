@@ -23,4 +23,16 @@ module.exports = {
     }
     return `https://buffer.com/instagram/setup?profile_id=${profileId}`
   },
+  getConnectBitlyURL: profileId => {
+    if (window.location.hostname === 'publish.local.buffer.com') {
+      return `https://local.buffer.com/oauth/bitly/${profileId}/auth`
+    }
+    return `https://buffer.com/oauth/bitly/${profileId}/auth`
+  },
+  getDisconnectBitlyURL: profileId => {
+    if (window.location.hostname === 'publish.local.buffer.com') {
+      return `https://local.buffer.com/profile/disconnect_bitly_auth/${profileId}`
+    }
+    return `https://buffer.com/profile/disconnect_bitly_auth/${profileId}`
+  },
 }
