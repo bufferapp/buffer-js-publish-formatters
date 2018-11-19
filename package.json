@@ -1,6 +1,6 @@
 {
   "name": "@bufferapp/publish-formatters",
-  "version": "1.9.27",
+  "version": "1.9.28",
   "description": "Tools for formatting·dates, numbers, etc.",
   "main": "lib/index.js",
   "scripts": {
