@@ -5,6 +5,12 @@ module.exports = {
     }
     return 'https://buffer.com/classic'
   },
+  getBackToClassicNewPublishBufferURL: () => {
+    if (window.location.hostname === 'publish.local.buffer.com') {
+      return 'https://local.buffer.com/back_publish'
+    }
+    return 'https://buffer.com/back_publish'
+  },
   getConnectSocialAccountURL: () => {
     if (window.location.hostname === 'publish.local.buffer.com') {
       return 'https://local.buffer.com/manage/accounts/connect'
