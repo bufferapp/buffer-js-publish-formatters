@@ -1,4 +1,10 @@
 module.exports = {
+  getBaseURL: () => {
+    if (window.location.hostname === 'publish.local.buffer.com') {
+      return 'local.buffer.com'
+    }
+    return 'buffer.com'
+  },
   getClassicBufferURL: () => {
     if (window.location.hostname === 'publish.local.buffer.com') {
       return 'https://local.buffer.com/classic'
